@@ -23,10 +23,26 @@ In this challenge, you are to build a Smurfs village utilizing context or Redux 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] What problem does the context API help solve?
+
+  - The Context API provides a way to share values, or state, between components without having to "prop drill" down
+
 - [ ] In your own words, describe `actions`, `reducers` and the `store` and their role in Redux. What does each piece do? Why is the store known as a 'single source of truth' in a redux application?
+
+  - Action: Actions in a redux application are essentially signals sent to a reducer instructing it to change the slice of state in an expected way
+  - Reducers: Reducers are a type of function that takes previous state and an action as it's parameters. These functions specify how a store will be affected when passed an action.
+  - Store: A store is where the central state is managed in a redux application. It is known as the "single source of truth" in a redux application because it is responsible for holding the data that will be passed to components within the application
+
 - [ ] What is the difference between Application state and Component state? When would be a good time to use one over the other?
+
+  - Application state is available to any component that connects to the store, while component state is only available locally. A reason to use local state over application state would be for a form, or some sort of input that affects a local state.
+
 - [ ] Describe `redux-thunk`, what does it allow us to do? How does it change our `action-creators`?
+
+  - Thunk is a middleware that allows us to interupt the dispatch of actions, and augment them.
+
 - [ ] What is your favorite state management system you've learned and this sprint? Please explain why!
+
+  - I am torn between both redux and Context API. I can "feel the power" of redux when I am using it, but it definitely has a learning curve that I am still not over yet. The Context API feels closer to the state pattern we had been practicing before, so that could explain why I feel a bit more comfortable with it.
 
 ## Project Set Up
 
